@@ -1,0 +1,3 @@
+# Terminal symmetry test data
+# Tests if swapping drain and source leads to the same behavior
+# Vgs id_normal id_reversed id_diff

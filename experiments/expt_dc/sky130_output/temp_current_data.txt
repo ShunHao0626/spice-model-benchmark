@@ -1,0 +1,4 @@
+# Current measurements at different temperatures for coefficient calculation
+Temperature Gate Drain Current
+25 0.8 1.0 -0.000228257
+125 0.8 1.0 -0.000332622

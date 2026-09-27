@@ -6,7 +6,7 @@ A curated record of MOSFET model integration and ngspice validation using an exi
 
 ## My contribution and provenance
 
-My work in this project was obtaining and importing models, including FreePDK45 and BSIM-family models, running simulations, and organizing the resulting evidence. I did not write the core benchmark implementation or author the third-party device models. The benchmark code comes from the [SJTU-YONGFU-RESEARCH-GRP project](https://github.com/SJTU-YONGFU-RESEARCH-GRP/spice_model_benchmark); this repository curates a local version together with model files, experiments and results. For a concrete example, see the [FreePDK45 DC analysis and its linked plots/data](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md). The [contribution and evidence guide](docs/CONTRIBUTION_AND_PROVENANCE.md) separates my role, upstream code and model authorship.
+My work in this project was obtaining and importing models, including FreePDK45, Sky130, GF180 and BSIM-family models, running simulations, and organizing the resulting evidence. These are examples, not a complete list of models I worked with. I did not write the core benchmark implementation or author the third-party device models. The benchmark code comes from the [SJTU-YONGFU-RESEARCH-GRP project](https://github.com/SJTU-YONGFU-RESEARCH-GRP/spice_model_benchmark); this repository curates a local version together with model files, experiments and results. For concrete examples, see the [FreePDK45 DC report](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md) and [archived Sky130 output](experiments/expt_dc/sky130_output/). The [contribution and evidence guide](docs/CONTRIBUTION_AND_PROVENANCE.md) maps each named model to the materials currently available here.
 
 ## Start here
 

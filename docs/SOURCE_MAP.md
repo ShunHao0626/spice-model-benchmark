@@ -8,6 +8,7 @@ The new repository was assembled from two local folders without copying either f
 | `models/FreePDK45/` | `spice_model_benchmark_old/models/FreePDK45/` |
 | `experiments/` | Selected scripts, circuits, and instructions from `spice_model_benchmark_old/sandbox/` |
 | `experiments/expt_dc/freepdk45_output/` | Data and plots referenced by the FreePDK45 DC report, from `spice_model_benchmark_old/sandbox/expt_dc/freepdk45_output/` |
+| `experiments/expt_dc/sky130_output/` | Archived Sky130 DC data and plots from `spice_model_benchmark_old/sandbox/expt_dc/sky130_output/`; model PDK and full run log not included |
 | `archive/reference-results-2025-05/` | `spice_model_benchmark_old/reference_results/` |
 | `archive/results-2025-06/` | `spice_model_benchmark_old/results/` |
 | `archive/sjtu-results-2025-08/` | `SJTU/results/` |

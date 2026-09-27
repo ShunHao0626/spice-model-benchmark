@@ -6,7 +6,7 @@
 
 ## 我的贡献与项目来源
 
-我在这项工作中主要负责获取及导入模型（包括 FreePDK45 和 BSIM 系列模型）、运行仿真并整理结果证据。基准程序的核心实现及第三方器件模型并非由我编写。基准代码来自 [SJTU-YONGFU-RESEARCH-GRP 项目](https://github.com/SJTU-YONGFU-RESEARCH-GRP/spice_model_benchmark)；本仓库整理了本地版本及相应的模型文件、实验和结果。具体案例见附带[图表及数据的 FreePDK45 直流分析](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md)。[贡献与证据说明](docs/CONTRIBUTION_AND_PROVENANCE.md)进一步区分了我的工作、上游代码及模型作者。
+我在这项工作中主要负责获取及导入模型，包括 FreePDK45、Sky130、GF180 和 BSIM 系列等；运行仿真并整理结果证据。这里列举的模型并非全部。基准程序的核心实现及第三方器件模型并非由我编写。基准代码来自 [SJTU-YONGFU-RESEARCH-GRP 项目](https://github.com/SJTU-YONGFU-RESEARCH-GRP/spice_model_benchmark)；本仓库整理了本地版本及相应的模型文件、实验和结果。具体案例见[附带图表及数据的 FreePDK45 直流报告](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md)和 [Sky130 历史输出](experiments/expt_dc/sky130_output/)。[贡献与证据说明](docs/CONTRIBUTION_AND_PROVENANCE.md)逐项说明这些模型在仓库中目前有哪些材料。
 
 ## 从这里开始
 

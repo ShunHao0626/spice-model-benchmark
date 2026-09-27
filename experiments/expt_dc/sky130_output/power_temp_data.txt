@@ -1,0 +1,4 @@
+# Power calculation at 25C and 125C for temperature coefficient
+Temperature Current Voltage Power
+25 -0.00103947 0.160528 0.000166864
+125 -0.0010077 0.192296 0.000193778
