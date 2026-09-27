@@ -25,6 +25,19 @@ spice-benchmark models/FreePDK45/nom.inc --modes dc --output-dir spice_benchmark
 
 The command creates `spice_benchmark_results/REPORT.md`, `data/` and `plots/` under the selected output directory. Omit `--modes dc` to run all four analyses. The output directory is ignored by Git.
 
+## What results can you get?
+
+The benchmark saves numerical simulation data in `data/`, figures in `plots/`, and a `REPORT.md` that summarizes measured values and verification checks. The table below shows the kinds of results produced when the corresponding model, circuit and analysis complete successfully.
+
+| Analysis | Results you can inspect | Example plot from a dated run |
+| --- | --- | --- |
+| **DC** | Drain current versus drain/gate voltage (I–V curves), temperature sweeps, and current balance at the device terminals. The report records current ranges, KCL error, power and temperature-dependent values. | [I–V characteristics](archive/sjtu-results-2025-08/plots/dc_iv_characteristics.png) |
+| **AC** | Gate capacitance versus bias, S-parameter magnitude/phase versus frequency, non-quasi-static phase response and charge-conservation data. The report can show capacitance ranges, S-parameter ranges, phase shift and charge error. | [Capacitance components](archive/sjtu-results-2025-08/plots/ac_cv_components.png) |
+| **Transient** | Gate/drain or input/output waveforms, switching current, power and energy over time. The report can show rise time, propagation or chain delay, and peak/average switching power. | [Switching response](archive/sjtu-results-2025-08/plots/trans_switching_response.png) |
+| **Noise** | Thermal, flicker (1/f) and shot-noise spectra versus frequency, including temperature or bias sweeps where available. The report can show noise floor, 1/f exponent, corner frequency and temperature dependence. | [Noise components](archive/sjtu-results-2025-08/plots/noise_components.png) |
+
+For a full example with the plots, raw files and reported measurements together, open the [August 2025 archived report](archive/sjtu-results-2025-08/REPORT.md) and its [`data/` directory](archive/sjtu-results-2025-08/data/). For a model-specific DC case, see the [FreePDK45 report](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md) and [linked output files](experiments/expt_dc/freepdk45_output/). These examples are historical outputs; their measured values and pass/fail statuses are not promises for another model or a new run.
+
 ## Benchmark another model
 
 The default circuits instantiate devices named `NMOS_VTG` and `PMOS_VTG` with FreePDK45 dimensions. Passing a different model file replaces the model include in **copies** of those circuits. Your model must define compatible device names and parameters.

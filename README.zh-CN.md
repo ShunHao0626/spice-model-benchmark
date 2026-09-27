@@ -25,6 +25,19 @@ spice-benchmark models/FreePDK45/nom.inc --modes dc --output-dir spice_benchmark
 
 运行后，指定的输出目录下会有 `REPORT.md`、`data/` 和 `plots/`。去掉 `--modes dc` 即运行全部四类分析。该输出目录已加入 Git 忽略规则。
 
+## 具体能得到什么结果？
+
+程序将数值仿真数据保存到 `data/`，图表保存到 `plots/`，并在 `REPORT.md` 汇总测量值及验证检查。下表列出相应模型、电路和分析成功完成时可以得到的结果类型。
+
+| 分析类型 | 可以查看的结果 | 历史运行中的图表示例 |
+| --- | --- | --- |
+| **DC 直流** | 漏极电流随漏极／栅极电压变化的 I–V 曲线、温度扫描、器件各端电流平衡；报告可给出电流范围、KCL 误差、功率和温度相关数值。 | [I–V 特性](archive/sjtu-results-2025-08/plots/dc_iv_characteristics.png) |
+| **AC 交流** | 栅电容随偏置变化、S 参数幅值／相位随频率变化、非准静态相位响应和电荷守恒数据；报告可给出电容及 S 参数范围、相位差和电荷误差。 | [电容分量](archive/sjtu-results-2025-08/plots/ac_cv_components.png) |
+| **瞬态** | 栅极／漏极或输入／输出电压波形、开关电流、随时间变化的功率和能量；报告可给出上升时间、传播或级联延迟、峰值与平均开关功率。 | [开关响应](archive/sjtu-results-2025-08/plots/trans_switching_response.png) |
+| **噪声** | 热噪声、闪烁噪声（1/f）和散粒噪声频谱，以及可用时的温度或偏置扫描；报告可给出噪声底、1/f 指数、拐角频率和温度依赖性。 | [噪声分量](archive/sjtu-results-2025-08/plots/noise_components.png) |
+
+如需同时查看图表、原始文件和报告中的测量值，可阅读 [2025 年 8 月的历史报告](archive/sjtu-results-2025-08/REPORT.md)及其 [`data/` 目录](archive/sjtu-results-2025-08/data/)；模型专属的直流案例见 [FreePDK45 报告](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md)和[所引用的输出文件](experiments/expt_dc/freepdk45_output/)。这些是历史结果，其数值及通过／失败状态不代表其他模型或新运行也会得到相同结论。
+
 ## 测试其他模型
 
 默认电路使用名为 `NMOS_VTG` 和 `PMOS_VTG` 的器件，以及 FreePDK45 的器件尺寸。传入其他模型文件时，程序会在**复制出的默认电路**中替换模型引用。新模型必须提供兼容的器件名称和参数。
