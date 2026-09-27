@@ -7,6 +7,7 @@ The new repository was assembled from two local folders without copying either f
 | `src/spice_model_benchmark/`, `examples/`, `netlists/`, `docs/` | `spice_model_benchmark_old` working tree (November 2025 generation) |
 | `models/FreePDK45/` | `spice_model_benchmark_old/models/FreePDK45/` |
 | `experiments/` | Selected scripts, circuits, and instructions from `spice_model_benchmark_old/sandbox/` |
+| `experiments/expt_dc/freepdk45_output/` | Data and plots referenced by the FreePDK45 DC report, from `spice_model_benchmark_old/sandbox/expt_dc/freepdk45_output/` |
 | `archive/reference-results-2025-05/` | `spice_model_benchmark_old/reference_results/` |
 | `archive/results-2025-06/` | `spice_model_benchmark_old/results/` |
 | `archive/sjtu-results-2025-08/` | `SJTU/results/` |

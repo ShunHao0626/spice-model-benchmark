@@ -10,4 +10,6 @@ These scripts are exploratory work kept separate from the main `spice-benchmark`
 | [`expt_noise/`](expt_noise/) | Noise analysis / 噪声分析 |
 | [`expt_rel/`](expt_rel/) | Reliability and environment studies / 可靠性与环境实验 |
 
-Start with each folder's own README or instructions where present. Generated experiment outputs were mostly left in the original local folders. 请先阅读各子目录中的 README 或说明文件；大多数生成结果仍保存在原始本地目录。
+For an evidence-backed example, open the [FreePDK45 DC report](expt_dc/FREEPDK45_MODEL_RESULTS.md) and its linked `freepdk45_output/` files. Some cross-derivative and symmetry outputs use fallback calculations, as disclosed in the report. Most other generated experiment outputs remain in the original local folders.
+
+可从附有 `freepdk45_output/` 数据和图表的 [FreePDK45 直流报告](expt_dc/FREEPDK45_MODEL_RESULTS.md)开始查看。部分交叉导数与对称性结果使用备用计算，报告中已有标注。其他大多数实验输出仍保存在原始本地目录。

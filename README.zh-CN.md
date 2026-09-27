@@ -2,7 +2,11 @@
 
 [English](README.md) · **简体中文**
 
-这是一个使用 ngspice 评估 MOSFET SPICE 模型的研究工具。它运行直流、瞬态、交流和噪声分析，并生成原始数据、图表和验证报告。
+本仓库整理了基于现有研究基准程序完成的 MOSFET 模型导入与 ngspice 仿真验证工作。工具可运行直流、瞬态、交流和噪声分析，并生成数据、图表和验证报告。
+
+## 我的贡献与项目来源
+
+我在这项工作中主要负责获取及导入模型（包括 FreePDK45 和 BSIM 系列模型）、运行仿真并整理结果证据。基准程序的核心实现及第三方器件模型并非由我编写。基准代码来自 [SJTU-YONGFU-RESEARCH-GRP 项目](https://github.com/SJTU-YONGFU-RESEARCH-GRP/spice_model_benchmark)；本仓库整理了本地版本及相应的模型文件、实验和结果。具体案例见附带[图表及数据的 FreePDK45 直流分析](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md)。[贡献与证据说明](docs/CONTRIBUTION_AND_PROVENANCE.md)进一步区分了我的工作、上游代码及模型作者。
 
 ## 从这里开始
 
@@ -50,7 +54,7 @@ spice-benchmark path/to/model.inc --modes dc \
 | [`experiments/`](experiments/README.md) | 独立的 DC、CV、瞬态、噪声和可靠性实验 |
 | [`archive/`](archive/README.md) | 原始目录中的历史报告、数据和图表 |
 | [`third_party/`](third_party/README.md) | 采用独立许可的 BSIM 模型源码 |
-| [`docs/`](docs/) | 方法、检查清单、阅读资料和[来源说明](docs/SOURCE_MAP.md) |
+| [`docs/`](docs/) | 方法、[贡献与来源说明](docs/CONTRIBUTION_AND_PROVENANCE.md)、检查清单和[合并来源说明](docs/SOURCE_MAP.md) |
 
 本项目使用仿真结果进行检查，目前不包含 AI/ML 参数提取实现。其他 PDK 的可选电路需要另行取得模型。具体纳入及排除的内容见[合并来源说明](docs/SOURCE_MAP.md)。
 

@@ -2,7 +2,11 @@
 
 **English** · [简体中文](README.zh-CN.md)
 
-A research toolkit for benchmarking MOSFET SPICE models with ngspice. It runs DC, transient, AC and noise analyses, then generates raw data, plots and a verification report.
+A curated record of MOSFET model integration and ngspice validation using an existing research benchmark. The toolkit runs DC, transient, AC and noise analyses and generates data, plots and verification reports.
+
+## My contribution and provenance
+
+My work in this project was obtaining and importing models, including FreePDK45 and BSIM-family models, running simulations, and organizing the resulting evidence. I did not write the core benchmark implementation or author the third-party device models. The benchmark code comes from the [SJTU-YONGFU-RESEARCH-GRP project](https://github.com/SJTU-YONGFU-RESEARCH-GRP/spice_model_benchmark); this repository curates a local version together with model files, experiments and results. For a concrete example, see the [FreePDK45 DC analysis and its linked plots/data](experiments/expt_dc/FREEPDK45_MODEL_RESULTS.md). The [contribution and evidence guide](docs/CONTRIBUTION_AND_PROVENANCE.md) separates my role, upstream code and model authorship.
 
 ## Start here
 
@@ -50,7 +54,7 @@ A smoke run of all four default modes on this consolidated checkout generated 33
 | [`experiments/`](experiments/README.md) | Standalone DC, CV, transient, noise and reliability work |
 | [`archive/`](archive/README.md) | Dated reports, data and plots from the source folders |
 | [`third_party/`](third_party/README.md) | Separately licensed BSIM model source code |
-| [`docs/`](docs/) | Methodology, checklist, reading list and [source map](docs/SOURCE_MAP.md) |
+| [`docs/`](docs/) | Methodology, [contribution and provenance](docs/CONTRIBUTION_AND_PROVENANCE.md), checklist and [source map](docs/SOURCE_MAP.md) |
 
 The benchmark uses simulation-based checks; it does not implement AI/ML parameter extraction. Optional circuits for other PDKs require models that are not bundled. See the [consolidation source map](docs/SOURCE_MAP.md) for what was included or left out.
 
