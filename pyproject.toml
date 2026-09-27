@@ -5,7 +5,7 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "spice-model-benchmark"
 version = "1.0.0"
-description = "A comprehensive benchmarking system for SPICE models with focus on MOSFET verification"
+description = "MOSFET SPICE model benchmarks with ngspice | 使用 ngspice 的 MOSFET SPICE 模型基准测试"
 readme = "README.md"
 license = {file = "LICENSE"}
 requires-python = ">=3.8"
