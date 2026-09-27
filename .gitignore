@@ -1,0 +1,13 @@
+.DS_Store
+._*
+__pycache__/
+*.py[cod]
+.venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+spice_benchmark_results/
+benchmark_results/
+*_benchmark_results/
+*.raw
+*.log
